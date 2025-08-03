@@ -108,17 +108,6 @@ try:
     print(f"Feature correlation with Class heatmap saved to {correlation_class_heatmap_path}")
     plt.show()
 
-    # General correlation heatmap for V1-V28, Amount, Time
-    # This can be very large, so let's pick a smaller, more relevant subset or focus on 'Class' as above.
-    # For now, the correlation with 'Class' is often the most insightful first step for classification.
-    # If you want a full heatmap (can be dense):
-    # plt.figure(figsize=(20, 18))
-    # sns.heatmap(df.corr(), annot=False, cmap='coolwarm') # annot=False for full heatmap for readability
-    # plt.title('Full Correlation Heatmap')
-    # plt.savefig("full_correlation_heatmap.png")
-    # plt.show()
-
-
     print("\n--- Data Visualization Complete ---")
     print("Generated plot files (check your script's directory):")
     print(f"- {class_dist_path}")
